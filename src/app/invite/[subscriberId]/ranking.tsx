@@ -1,11 +1,11 @@
-import { getRanking } from '@/http/api'
+import { getRanking } from '@/http/api-fake'
 import Image from 'next/image'
 import copper from '../../../assets/medal-copper.svg'
 import gold from '../../../assets/medal-gold.svg'
 import silver from '../../../assets/medal-silver.svg'
 
 export async function Ranking() {
-  const { ranking } = await getRanking()
+  const { ranking } = getRanking()
 
   return (
     <div className="w-full max-w-[440px] space-y-5">

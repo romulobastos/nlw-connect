@@ -2,7 +2,7 @@ import {
   getSubscriberInviteClicks,
   getSubscriberInviteCount,
   getSubscriberRankingPosition,
-} from '@/http/api'
+} from '@/http/api-fake'
 import { BadgeCheck, Medal, MousePointerClick } from 'lucide-react'
 
 interface StatsProps {
